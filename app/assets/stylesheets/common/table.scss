@@ -1,0 +1,79 @@
+/**
+ * Component :: Table
+*/
+
+.table {
+  &__col-center {
+    text-align: center;
+  }
+
+  &__col-left {
+    text-align: left;
+  }
+
+  &__col-right {
+    text-align: right;
+  }
+
+  &__col-w5 {
+    width: 5%;
+  }
+
+  &__col-w10 {
+    width: 10%;
+  }
+
+  &__col-w15 {
+    width: 15%;
+  }
+
+  &__col-w20 {
+    width: 20%;
+  }
+
+  &__col-w25 {
+    width: 25%;
+  }
+
+  &__col-w30 {
+    width: 30%;
+  }
+
+  &__col-w35 {
+    width: 35%;
+  }
+
+  &__col-w40 {
+    width: 40%;
+  }
+
+  &__col-w45 {
+    width: 45%;
+  }
+
+  &__col-w50 {
+    width: 50%;
+  }
+
+  &__col-w55 {
+    width: 55%;
+  }
+
+  &__col-w60 {
+    width: 60%;
+  }
+}
+
+.title {
+  &--pad-l10-t10 {
+    padding: 10px 0 0 10px;
+  }
+
+  &--pad-10 {
+    padding: 10px;
+  }
+
+  &--pad-r10 {
+    padding-right: 10px;
+  }
+}

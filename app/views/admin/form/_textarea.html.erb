@@ -1,0 +1,6 @@
+<div class="form-group">
+  <%= form.label attribute, label: false, wrapper: false, error: false %>
+  <%= form.input attribute, as: :text, label: false, wrapper: false, error: false, class: "form-control",
+    placeholder: placeholder, input_html: {rows: rows}%>
+  <%= form.full_error attribute, class: "form__item-error" %>
+</div>

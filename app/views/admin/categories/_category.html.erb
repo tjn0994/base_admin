@@ -1,0 +1,18 @@
+<tr>
+  <td class="table__col-w5 table__col-center"><%= category.id %></td>
+  <td class="table__col-w15"><%= category.code %></td>
+  <td class="table__col-w30"><%= category.name %></td>
+  <td class="table__col-w40"><%= category.description %></td>
+  <td class="table__col-w10 table__col-center">
+    <%= link_to "#", class: "btn btn-xs btn-default" do %>
+      <i class="fa fa-eye"></i>
+    <% end %>
+    <%= link_to edit_admin_category_path(category), class: "btn btn-xs btn-warning" do %>
+      <i class="fa fa-pencil"></i>
+    <% end %>
+    <%= link_to admin_category_path(category), method: :delete, class: "btn btn-xs btn-danger",
+      data: {confirm: t("admin.messages.confirm", name: category.name)} do %>
+      <i class="fa fa-trash"></i>
+    <% end %>
+  </td>
+</tr>

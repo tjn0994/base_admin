@@ -1,0 +1,19 @@
+<div class="box box-primary">
+  <div class="box-header with-border">
+    <h3 class="box-title">Quick Example</h3>
+  </div>
+  <div class="row">
+    <%= simple_form_for [:admin, category], html: {class: "col-md-offset-2 col-md-8"} do |f| %>
+      <div class="box-body">
+        <%= render partial: "admin/form/input", collection: %i(code name), as: :attribute,
+          locals: {form: f, placeholder: nil} %>
+        <%= render "admin/form/textarea", attribute: :description, form: f, rows: 5, placeholder: nil %>
+      </div>
+      <div class="box-footer">
+        <center>
+          <%= f.button :submit, yield(:button_submit), class: "btn btn-primary form__input--color-white" %>
+        </center>
+      </div>
+    <% end %>
+  </div>
+</div>

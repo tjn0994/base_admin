@@ -1,0 +1,7 @@
+per_pages:
+  first: 5
+  second: 10
+  third: 20
+  fourth: 25
+  fifth: 50
+  sixth: 100

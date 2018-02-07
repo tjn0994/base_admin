@@ -1,0 +1,39 @@
+vi:
+  dictionary:
+    button_create: &button_create "Tạo"
+    button_update: &button_update "Cập nhật"
+    new: &new "Thêm mới"
+    action: &action "Hành động"
+  admin:
+    forders:
+      category: "Danh mục"
+    messages:
+      create_success: "Tạo %{name} thành công"
+      create_fail: "Tạo %{name} không thành công"
+      update_success: "Cập nhật %{name} thành công"
+      update_fail: "Cập nhật %{name} không thành công"
+      delete_success: "Xóa %{name} thành công"
+      delete_fail: "Xóa %{name} không thành công"
+      confirm: "Bạn có chắc chắn muốn xóa %{name} ?"
+      not_found: "Không tìm thấy %{name} này!"
+    search:
+      not_found: "Dữ liệu không tìm thấy!"
+    categories:
+      index:
+        title: "Danh sách danh mục"
+        new: *new
+      search:
+        name: "Tìm kiếm"
+      new:
+        button_create: *button_create
+      edit:
+        button_update: *button_update
+      table_category:
+        action: *action
+  views:
+    pagination:
+      first: "« Đầu tiên"
+      last: "Cuối cùng »"
+      previous: "‹ trước"
+      next: "kế tiếp ›"
+      truncate: "…"

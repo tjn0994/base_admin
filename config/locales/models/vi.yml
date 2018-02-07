@@ -1,0 +1,28 @@
+vi:
+  dictionary:
+    blank: &blank "không được để trống."
+    too_short: &too_short "ít nhất %{count} ký tự."
+    too_long: &too_long "nhiều nhất %{count} ký tự."
+    taken: &taken "đã tồn tại."
+  activerecord:
+    attributes:
+      category:
+        id: "#"
+        code: "Mã"
+        name: "Tên"
+        description: "Mô tả"
+    errors:
+      models:
+        category:
+          attributes:
+            code:
+              blank: *blank
+              too_short: *too_short
+              too_long: *too_long
+              taken: *taken
+            name:
+              blank: *blank
+              too_short: *too_short
+              too_long: *too_long
+            description:
+              too_long: *too_long

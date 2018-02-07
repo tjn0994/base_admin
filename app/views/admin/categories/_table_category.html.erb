@@ -1,0 +1,25 @@
+<div class="box-body">
+  <table class="table table-bordered">
+    <tbody>
+      <tr>
+        <th class="table__col-w5 table__col-center">
+          <%= sort_link @search, :id, Category.human_attribute_name(:id), {}, {remote: true} %>
+        </th>
+        <th class="table__col-w15">
+          <%= sort_link @search, :id, Category.human_attribute_name(:code), {}, {remote: true} %>
+        </th>
+        <th class="table__col-w30">
+          <%= sort_link @search, :id, Category.human_attribute_name(:name), {}, {remote: true} %>
+        </th>
+        <th class="table__col-w40">
+          <%= sort_link @search, :id, Category.human_attribute_name(:description), {}, {remote: true} %>
+        </th>
+        <th class="table__col-w10 table__col-center"><%= t ".action" %></th>
+      </tr>
+      <%= render partial: "category", collection: @categories, as: :category %>
+    </tbody>
+  </table>
+</div>
+<div class="box-footer clearfix">
+  <%= paginate @categories, remote: true %>
+</div>

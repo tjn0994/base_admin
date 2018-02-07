@@ -1,0 +1,16 @@
+<div class="title--pad-10">
+  <div class="panel panel-default">
+    <div class="panel-heading"><%= t ".name"%></div>
+    <div class="panel-body">
+      <%= search_form_for [:admin, @search], class: "row col-md-offset-2", remote: true do |f| %>
+        <div class="form-group col-md-7">
+          <%= f.text_field :code_or_name_or_description_cont, placeholder: "Nhập mã hoặc tên danh mục hoặc mô tả",
+            class: "form-control" %>
+        </div>
+        <%= link_to admin_categories_path, class: "col-md-1" do %>
+          <i class="fa fa-refresh btn btn-success"></i>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

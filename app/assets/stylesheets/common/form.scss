@@ -1,0 +1,23 @@
+/**
+ * Component :: Form
+*/
+
+@import "abstracts/variables";
+
+.form {
+  &__input {
+    &--color-white {
+      color: $color-white;
+    }
+  }
+
+  &__item-error {
+    color: $color-red;
+  }
+
+  &__label {
+    &--required {
+      color: $color-red;
+    }
+  }
+}

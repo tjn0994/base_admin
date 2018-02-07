@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Mitsu</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "dashboard", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_include_tag "dashboard", "data-turbolinks-track": "reload" %>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  </head>
+
+  <body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+
+      <!-- header -->
+      <%= render "layouts/admin/header" %>
+      <!-- /header -->
+      <aside class="main-sidebar">
+        <!-- sidebar -->
+        <section class="sidebar">
+          <%= render "layouts/admin/sidebar" %>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <%= render "layouts/admin/content_header" %>
+        <section class="content">
+          <%= yield %>
+        </section>
+        <!-- /.content -->
+      </div>
+      <!-- /.content-wrapper -->
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          <b>Version</b> 2.4.0
+        </div>
+        <strong>Copyright &copy; 2014-2016 <a href="https://adminlte.io">Almsaeed Studio</a>.</strong> All rights
+        reserved.
+      </footer>
+
+      <!-- Control Sidebar -->
+      <%= render "layouts/admin/color_sidebar" %>
+      <!-- /.control-sidebar -->
+      <!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+      <div class="control-sidebar-bg"></div>
+    </div>
+    <!-- ./wrapper -->
+  </body>
+</html>

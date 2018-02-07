@@ -1,0 +1,2 @@
+$('#list-categories').html('<%= j render("table_category") %>');
+$('#not-exist-categories-search').html('<%= t("admin.search.not_found") if @search.result.blank? %>');
